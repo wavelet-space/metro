@@ -1,13 +1,20 @@
 
-from setuptools import setup, find_namespace_packages
+from setuptools import setup, find_packages
 
 setup(
-    name="wavelet-basis",
-    version="0.1.0",
+    name="metro",
+    version="0.2.0",
     package_dir={"": "src"},
-    packages=find_namespace_packages(where="src"),
-    install_requires=[],
+    packages=find_packages(where="src"),
+    install_requires=[
+        "pyyaml",
+        "jinja2", 
+        "graphviz",
+    ],
      entry_points = {
-        'console_scripts': ['basis=wavelet.basis:main'],
+        'console_scripts': [
+            'metro=metro:main',
+            'graph=metro._explore:main',
+        ],
     }
 )
