@@ -1,6 +1,6 @@
 # metro
 
-Tool for Advanced Packaging (Python and C/C++).
+Generate and manage Python and C/C++ packages with one tool.
 
 ## Features
 
